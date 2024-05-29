@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "titulo": "Primera Publicación",
+        "contenido": "Este es el contenido de la primera publicación.",
+        "likes": 0
+    },
+    {
+        "id": 2,
+        "titulo": "Segunda Publicación",
+        "contenido": "Este es el contenido de la segunda publicación.",
+        "likes": 0
+    }
+]

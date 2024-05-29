@@ -1,0 +1,22 @@
+.container-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8f8f8f;
+    width:  35vh;
+    height: 35vh;
+}
+.photo-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:  30vh;
+    height: 30vh;
+    background-color: #ffffff;
+}
+
+.photo-profile img{
+    width:  70%;
+    height: 70%;
+}
+

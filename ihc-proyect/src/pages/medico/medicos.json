@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "nombre": "Dr. Juan Pérez",
+        "especialidad": "Cardiología",
+        "descripcion": "Experto en enfermedades del corazón con más de 15 años de experiencia.",
+        "foto": "https://example.com/foto1.jpg",
+        "experiencia": 15,
+        "ubicacion": "Lima"
+    },
+    {
+        "id": 2,
+        "nombre": "Dra. María López",
+        "especialidad": "Neurología",
+        "descripcion": "Especialista en trastornos del sistema nervioso.",
+        "foto": "https://example.com/foto2.jpg",
+        "experiencia": 10,
+        "ubicacion": "Arequipa"
+    },
+    {
+        "id": 3,
+        "nombre": "Enfermero Carlos Martínez",
+        "especialidad": "Cuidados Intensivos",
+        "descripcion": "Enfermero con amplia experiencia en cuidados intensivos.",
+        "foto": "https://example.com/foto3.jpg",
+        "experiencia": 8,
+        "ubicacion": "Cusco"
+    }
+]

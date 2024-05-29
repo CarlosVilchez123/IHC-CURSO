@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa; 
+}
+
+
+.half-bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #00FF80; 
+}
+
+.login-container {
+  position: relative;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px; /* Añade margen inferior entre cada grupo */
+}
+
+.form-control, .select-control {
+  margin-bottom: 10px; /* Añade margen inferior entre cada control dentro de un grupo */
+  width: 100%;
+  height: 30px; /* Ajusta la altura para que coincida con los demás inputs */
+  border-radius: 4px;
+}
+.date-picker{
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.select-control .ant-select-selection-placeholder {
+  line-height: 35px; /* Ajusta el line-height para centrar el texto placeholder verticalmente */
+}
+
+.btn {
+  width: 20px;
+}
+
+.selector{
+  width: 100%;
+  height: 40px;
+}
+
+.container-buttons{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+

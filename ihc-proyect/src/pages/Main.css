@@ -1,0 +1,11 @@
+.container-searchbar{
+    display: flex;
+    background-color: #00FF80;
+    width: 100%;
+    justify-content: center;
+}
+
+.container-navbar{
+    background-color: #00FF80;
+    width: 100%;
+}

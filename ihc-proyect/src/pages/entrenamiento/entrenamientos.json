@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "titulo": "Entrenamiento de Fuerza",
+        "descripcion": "El entrenamiento de fuerza ayuda a mejorar la masa muscular y la resistencia.",
+        "detalle": "El entrenamiento de fuerza implica el uso de pesas y otros medios para mejorar la fuerza muscular.",
+        "videoUrl": "https://www.youtube.com/watch?v=IJbmuiQSIm4"
+    },
+    {
+        "id": 2,
+        "titulo": "Entrenamiento de Cardiovascular",
+        "descripcion": "El entrenamiento cardiovascular mejora la salud del corazón y la resistencia aeróbica.",
+        "detalle": "El entrenamiento cardiovascular incluye actividades como correr, nadar y andar en bicicleta.",
+        "videoUrl": "https://www.youtube.com/embed/some-video-id-2"
+    },
+    {
+        "id": 3,
+        "titulo": "Entrenamiento de Flexibilidad",
+        "descripcion": "El entrenamiento de flexibilidad mejora la amplitud de movimiento y previene lesiones.",
+        "detalle": "El entrenamiento de flexibilidad incluye ejercicios como el yoga y el estiramiento.",
+        "videoUrl": "https://www.youtube.com/embed/some-video-id-3"
+    }
+]

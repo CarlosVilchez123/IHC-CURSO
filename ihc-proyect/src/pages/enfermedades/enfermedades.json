@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "titulo": "Parkinson",
+        "descripcion": "El Parkinson es un trastorno neurodegenerativo que afecta el movimiento, causando temblores, rigidez y dificultad para caminar y coordinarse.",
+        "detalle": "El Parkinson es causado por la degeneración de las células nerviosas en una parte del cerebro llamada sustancia negra. Estas células producen dopamina, un neurotransmisor que ayuda a controlar el movimiento.",
+        "descripcion_extensa": "La enfermedad de Parkinson es una afección crónica y progresiva del sistema nervioso central que afecta principalmente a las personas mayores. Es causada por la pérdida de células nerviosas en la sustancia negra, una parte del cerebro que produce dopamina. La dopamina es un neurotransmisor crucial para regular el movimiento y la coordinación. Los síntomas más comunes incluyen temblores en reposo, rigidez muscular, bradicinesia (lentitud de movimiento) y problemas de equilibrio. A medida que la enfermedad progresa, también pueden aparecer síntomas no motores como trastornos del sueño, problemas cognitivos y alteraciones del estado de ánimo. Aunque no existe cura, los tratamientos pueden ayudar a controlar los síntomas y mejorar la calidad de vida de los pacientes."
+    },
+    {
+        "id": 2,
+        "titulo": "Esclerosis Múltiple",
+        "descripcion": "La esclerosis múltiple es una enfermedad crónica que afecta el sistema nervioso central, interrumpiendo la comunicación entre el cerebro y el cuerpo.",
+        "detalle": "En la esclerosis múltiple, el sistema inmunológico ataca la mielina, la sustancia que recubre y protege las fibras nerviosas, causando problemas de comunicación entre el cerebro y el resto del cuerpo.",
+        "descripcion_extensa": "La esclerosis múltiple (EM) es una enfermedad autoinmunitaria que afecta el cerebro y la médula espinal (sistema nervioso central). En la EM, el sistema inmunológico del cuerpo ataca la mielina, una sustancia grasa que recubre y protege las fibras nerviosas. Esto provoca una comunicación defectuosa entre el cerebro y el resto del cuerpo. Los síntomas varían y pueden incluir problemas de visión, debilidad muscular, falta de coordinación y equilibrio, sensaciones alteradas, y problemas de memoria y concentración. La EM puede ser difícil de diagnosticar porque sus síntomas son similares a los de otras enfermedades. No hay cura para la EM, pero los tratamientos pueden ayudar a controlar los síntomas y reducir la progresión de la enfermedad."
+    },
+    {
+        "id": 3,
+        "titulo": "Atrofia Muscular Espinal",
+        "descripcion": "La atrofia muscular espinal es una enfermedad genética que afecta las neuronas motoras, llevando a una debilidad y atrofia muscular progresiva.",
+        "detalle": "La atrofia muscular espinal es causada por mutaciones en el gen SMN1, que es esencial para la supervivencia de las neuronas motoras. Sin suficiente proteína SMN, las neuronas motoras se degeneran y mueren.",
+        "descripcion_extensa": "La atrofia muscular espinal (AME) es una enfermedad genética rara que afecta a las neuronas motoras en la médula espinal, provocando debilidad y atrofia muscular progresiva. Los tipos de AME se clasifican según la gravedad y la edad de inicio de los síntomas. Los bebés con AME tipo 1, la forma más grave, pueden tener dificultad para respirar y tragar y no alcanzan los hitos motores. La AME tipo 2 y tipo 3 son menos graves, pero aún pueden causar debilidad muscular significativa y discapacidades. La AME tipo 4, que aparece en la edad adulta, es la forma más leve. Los avances en la terapia genética y otros tratamientos han mejorado las perspectivas para las personas con AME, aunque la enfermedad sigue siendo una condición seria."
+    },
+    {
+        "id": 4,
+        "titulo": "Distrofia Muscular de Duchenne",
+        "descripcion": "La distrofia muscular de Duchenne es una enfermedad genética que causa debilidad muscular progresiva y pérdida de la función muscular.",
+        "detalle": "La distrofia muscular de Duchenne es causada por mutaciones en el gen DMD, que codifica la distrofina, una proteína que ayuda a mantener la integridad de las células musculares. Sin suficiente distrofina, los músculos se debilitan y degeneran con el tiempo.",
+        "descripcion_extensa": "La distrofia muscular de Duchenne (DMD) es una enfermedad genética que generalmente afecta a los niños varones. Es causada por mutaciones en el gen que codifica la distrofina, una proteína esencial para la estabilidad y función del músculo. Los primeros síntomas suelen aparecer en la primera infancia y pueden incluir retrasos en el desarrollo motor, caídas frecuentes y dificultad para correr y saltar. A medida que la enfermedad progresa, la debilidad muscular se extiende a los brazos, el cuello y otras áreas. Los niños con DMD a menudo requieren una silla de ruedas antes de la adolescencia. Con el tiempo, la debilidad muscular también afecta los músculos respiratorios y cardíacos, lo que puede llevar a complicaciones graves. Aunque no existe una cura para la DMD, los tratamientos como los corticosteroides y las terapias físicas pueden ayudar a prolongar la movilidad y mejorar la calidad de vida."
+    }
+]

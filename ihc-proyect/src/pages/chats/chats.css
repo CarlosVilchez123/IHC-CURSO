@@ -1,0 +1,124 @@
+/* chats.css */
+.container-chats {
+    position: absolute;
+    display: flex;
+    margin-top: 20px;
+    height: 75vh;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sidebar-chats {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: #b3f3c3; /* Color verde */
+    width: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.sidebar-chats input{
+
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 10px;
+}
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    background-color: #d9d9d9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.sidebar-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.sidebar-item span {
+    font-size: 14px;
+}
+
+.chat-window {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    background-color: #f0f0f0;
+    border-left: 2px solid #ccc;
+}
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    background-color: #d9d9d9;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+.chat-header img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.chat-header span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.chat-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.chat-message {
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    max-width: 60%;
+}
+
+.chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #d9d9d9;
+    border-top: 2px solid #ccc;
+    position: relative;
+}
+
+.chat-input input {
+    flex: 1;
+    height: 30px;
+    padding: 10px 40px; /* Ajusta el padding para dar espacio a los íconos */
+    border-radius: 20px;
+    border: none;
+    margin-right: 10px;
+}
+
+.input-icon {
+    position: absolute;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+
+.input-icon:last-of-type {
+    right: 50px; /* Posiciona el segundo ícono a la derecha del input */
+}
+
+
+.chat-input-icons {
+    display: flex;
+    align-items: center;
+}

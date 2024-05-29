@@ -1,0 +1,105 @@
+.enfermedades-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #b3f3c3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 120vh;
+    margin: 2rem auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.search-input {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+
+.enfermedad-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.enfermedad-card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para el modal */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px; /* Aumenta el tamaño del modal */
+    width: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.info-button, .consult-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.info-button {
+    background-color: #007bff;
+}
+
+.info-button:hover {
+    background-color: #0056b3;
+}
+
+.consult-button {
+    background-color: #28a745;
+}
+
+.consult-button:hover {
+    background-color: #218838;
+}
