@@ -1,4 +1,4 @@
-import { getConection, mssql } from "./conection/conectionSQLserver.js";
+import { getConection, mssql } from "./database/conectionSQLserver.js";
 
 // Obtener todos los pacientes
 export const getPacientes = async () => {

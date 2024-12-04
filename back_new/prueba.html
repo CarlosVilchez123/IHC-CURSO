@@ -3,54 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatbot</title>
+    <title>Chatbot Groq</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .chat-container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .chat-log {
+            border: 1px solid #ddd;
+            padding: 10px;
+            height: 300px;
+            overflow-y: auto;
+            background: #f9f9f9;
+        }
+        .chat-log div {
+            margin-bottom: 10px;
+        }
+        .user {
+            color: blue;
+        }
+        .bot {
+            color: green;
+        }
+        .chat-input {
+            margin-top: 10px;
+            display: flex;
+        }
+        .chat-input input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-right: none;
+        }
+        .chat-input button {
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <h1>Chatbot API</h1>
-    <form id="chat-form">
-        <label for="user-input">Escribe tu pregunta:</label><br>
-        <input type="text" id="user-input" placeholder="¿Cuál es tu propósito?" required>
-        <button type="submit">Enviar</button>
-    </form>
-    <div id="response">
-        <h2>Respuesta del Chatbot:</h2>
-        <p id="bot-response"></p>
+    <div class="chat-container">
+        <h1>Chatbot Groq</h1>
+        <div class="chat-log" id="chatLog">
+        </div>
+        <form class="chat-input" id="chatForm">
+            <input type="text" id="userInput" placeholder="Escribe tu mensaje aquí..." required>
+            <button type="submit">Enviar</button>
+        </form>
     </div>
 
     <script>
-        const form = document.getElementById("chat-form");
-        const userInput = document.getElementById("user-input");
-        const botResponse = document.getElementById("bot-response");
+        const API_KEY = "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";
+        const API_URL = "http://localhost:3000/api/chat"; // Cambia a la URL de tu servidor si es diferente
 
-        form.addEventListener("submit", async (e) => {
-            e.preventDefault(); // Evitar el comportamiento predeterminado del formulario
-            const question = userInput.value;
+        const chatLog = document.getElementById("chatLog");
+        const chatForm = document.getElementById("chatForm");
+        const userInput = document.getElementById("userInput");
+
+        chatForm.addEventListener("submit", async (event) => {
+            event.preventDefault();
+            const message = userInput.value;
+            addMessageToLog("user", message);
 
             try {
-                // Realizar una solicitud POST a la API
-                const response = await fetch("http://localhost:3000/api/items/chat", {
+                const response = await fetch(API_URL, {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
                     },
-                    body: JSON.stringify({ userInput: question }),
+                    body: JSON.stringify({
+                        userInput: message,
+                        apiKey: API_KEY,
+                    }),
                 });
 
                 if (!response.ok) {
-                    throw new Error("Error al consumir la API del chatbot");
+                    throw new Error("Error al comunicarse con el servidor");
                 }
 
-                // Obtener la respuesta de la API
                 const data = await response.json();
-                botResponse.innerText = data.response;
+                addMessageToLog("bot", data.response);
             } catch (error) {
-                botResponse.innerText = "Hubo un error al comunicarse con el chatbot.";
-                console.error(error);
+                console.error("Error:", error);
+                addMessageToLog("bot", "Hubo un problema al procesar tu solicitud.");
             }
 
-            // Limpiar el campo de entrada
             userInput.value = "";
         });
+
+        function addMessageToLog(sender, message) {
+            const messageDiv = document.createElement("div");
+            messageDiv.className = sender;
+            messageDiv.textContent = sender === "user" ? `Tú: ${message}` : `Bot: ${message}`;
+            chatLog.appendChild(messageDiv);
+            chatLog.scrollTop = chatLog.scrollHeight;
+        }
     </script>
 </body>
 </html>
