@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+</head>
+<body>
+    <h1>Chatbot API</h1>
+    <form id="chat-form">
+        <label for="user-input">Escribe tu pregunta:</label><br>
+        <input type="text" id="user-input" placeholder="¿Cuál es tu propósito?" required>
+        <button type="submit">Enviar</button>
+    </form>
+    <div id="response">
+        <h2>Respuesta del Chatbot:</h2>
+        <p id="bot-response"></p>
+    </div>
+
+    <script>
+        const form = document.getElementById("chat-form");
+        const userInput = document.getElementById("user-input");
+        const botResponse = document.getElementById("bot-response");
+
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault(); // Evitar el comportamiento predeterminado del formulario
+            const question = userInput.value;
+
+            try {
+                // Realizar una solicitud POST a la API
+                const response = await fetch("http://localhost:3000/api/items/chat", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ userInput: question }),
+                });
+
+                if (!response.ok) {
+                    throw new Error("Error al consumir la API del chatbot");
+                }
+
+                // Obtener la respuesta de la API
+                const data = await response.json();
+                botResponse.innerText = data.response;
+            } catch (error) {
+                botResponse.innerText = "Hubo un error al comunicarse con el chatbot.";
+                console.error(error);
+            }
+
+            // Limpiar el campo de entrada
+            userInput.value = "";
+        });
+    </script>
+</body>
+</html>
